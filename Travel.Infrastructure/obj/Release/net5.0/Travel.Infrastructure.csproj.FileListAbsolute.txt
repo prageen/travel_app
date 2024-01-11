@@ -1,0 +1,12 @@
+E:\vijesh\traveller\Travel\Travel-Booking\Travel.Infrastructure\bin\Release\net5.0\Travel.Infrastructure.deps.json
+E:\vijesh\traveller\Travel\Travel-Booking\Travel.Infrastructure\bin\Release\net5.0\Travel.Infrastructure.dll
+E:\vijesh\traveller\Travel\Travel-Booking\Travel.Infrastructure\bin\Release\net5.0\ref\Travel.Infrastructure.dll
+E:\vijesh\traveller\Travel\Travel-Booking\Travel.Infrastructure\bin\Release\net5.0\Travel.Infrastructure.pdb
+E:\vijesh\traveller\Travel\Travel-Booking\Travel.Infrastructure\obj\Release\net5.0\Travel.Infrastructure.csproj.AssemblyReference.cache
+E:\vijesh\traveller\Travel\Travel-Booking\Travel.Infrastructure\obj\Release\net5.0\Travel.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\vijesh\traveller\Travel\Travel-Booking\Travel.Infrastructure\obj\Release\net5.0\Travel.Infrastructure.AssemblyInfoInputs.cache
+E:\vijesh\traveller\Travel\Travel-Booking\Travel.Infrastructure\obj\Release\net5.0\Travel.Infrastructure.AssemblyInfo.cs
+E:\vijesh\traveller\Travel\Travel-Booking\Travel.Infrastructure\obj\Release\net5.0\Travel.Infrastructure.csproj.CoreCompileInputs.cache
+E:\vijesh\traveller\Travel\Travel-Booking\Travel.Infrastructure\obj\Release\net5.0\Travel.Infrastructure.dll
+E:\vijesh\traveller\Travel\Travel-Booking\Travel.Infrastructure\obj\Release\net5.0\ref\Travel.Infrastructure.dll
+E:\vijesh\traveller\Travel\Travel-Booking\Travel.Infrastructure\obj\Release\net5.0\Travel.Infrastructure.pdb

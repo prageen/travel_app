@@ -1,0 +1,13 @@
+C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\bin\Debug\netcoreapp3.1\Travel.Infrastructure.deps.json
+C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\bin\Debug\netcoreapp3.1\Travel.Infrastructure.runtimeconfig.json
+C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\bin\Debug\netcoreapp3.1\Travel.Infrastructure.runtimeconfig.dev.json
+C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\bin\Debug\netcoreapp3.1\Travel.Infrastructure.dll
+C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\bin\Debug\netcoreapp3.1\Travel.Infrastructure.pdb
+C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.AssemblyInfo.cs
+C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.dll
+C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.pdb
+C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.genruntimeconfig.cache
