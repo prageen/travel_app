@@ -30,6 +30,7 @@ namespace Travel.Repository.Repositories
             Banner = new BannerRepository(_context);
             State = new StateRepository(_context);
             District = new DistrictRepository(_context);
+            Users = new UsersRepository(_context);
 
         }
         //public IAuthenticationRepository AuthUser { get; private set; }
@@ -57,6 +58,7 @@ namespace Travel.Repository.Repositories
         public IBannerRepository Banner { get; private set; }
         public IStateRepository State { get; private set; }
         public IDistrictRepository District { get; private set; }
+        public IUsersRepository Users { get; private set; }
 
         public int Complete()
         {

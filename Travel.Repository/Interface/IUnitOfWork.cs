@@ -33,6 +33,7 @@ namespace Travel.Repository.Interface
         public IBannerRepository Banner { get; }
         public IStateRepository State { get; }
         public IDistrictRepository District { get; }
+        public IUsersRepository Users { get; }
         int Complete();
     }
 }

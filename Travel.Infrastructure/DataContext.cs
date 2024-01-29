@@ -27,9 +27,10 @@ namespace Travel.Infrastructure
         public DbSet<VehicleMaster> VehicleMaster { get; set; }
         public DbSet<Vehicle> Vehicle { get; set; }
         public DbSet<VehicleExpence > VehicleExpence { get; set; }
-        public DbSet<TripExpence> TripExpence { get; set; }
         public DbSet<State> States { get; set; }
         public DbSet<District> Districts { get; set; }
+        public DbSet<Users> Users { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
