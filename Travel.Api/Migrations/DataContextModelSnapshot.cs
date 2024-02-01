@@ -220,6 +220,34 @@ namespace Travel.Api.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Travel.Infrastructure.District", b =>
+                {
+                    b.Property<int>("DistrictId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DistrictId"), 1L, 1);
+
+                    b.Property<string>("DistrictName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ReturnDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ReturnTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("StateId")
+                        .HasColumnType("int");
+
+                    b.HasKey("DistrictId");
+
+                    b.HasIndex("StateId");
+
+                    b.ToTable("Districts");
+                });
+
             modelBuilder.Entity("Travel.Infrastructure.Driver", b =>
                 {
                     b.Property<int>("DriverId")
@@ -245,6 +273,9 @@ namespace Travel.Api.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("OwnerId")
+                        .HasColumnType("int");
+
                     b.Property<int>("Phone")
                         .HasColumnType("int");
 
@@ -255,6 +286,8 @@ namespace Travel.Api.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("DriverId");
+
+                    b.HasIndex("OwnerId");
 
                     b.ToTable("Driver");
                 });
@@ -326,51 +359,7 @@ namespace Travel.Api.Migrations
                     b.ToTable("Party");
                 });
 
-            modelBuilder.Entity("Travel.Infrastructure.Terms", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("TermsAndConditions")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Terms");
-                });
-
-            modelBuilder.Entity("Travel.Infrastructure.Trip.District", b =>
-                {
-                    b.Property<int>("DistrictId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DistrictId"), 1L, 1);
-
-                    b.Property<string>("DistrictName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("ReturnDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("ReturnTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("StateId")
-                        .HasColumnType("int");
-
-                    b.HasKey("DistrictId");
-
-                    b.HasIndex("StateId");
-
-                    b.ToTable("Districts");
-                });
-
-            modelBuilder.Entity("Travel.Infrastructure.Trip.State", b =>
+            modelBuilder.Entity("Travel.Infrastructure.State", b =>
                 {
                     b.Property<int>("StateId")
                         .ValueGeneratedOnAdd()
@@ -391,6 +380,22 @@ namespace Travel.Api.Migrations
                     b.HasKey("StateId");
 
                     b.ToTable("States");
+                });
+
+            modelBuilder.Entity("Travel.Infrastructure.Terms", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("TermsAndConditions")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Terms");
                 });
 
             modelBuilder.Entity("Travel.Infrastructure.TripCategory", b =>
@@ -461,20 +466,38 @@ namespace Travel.Api.Migrations
                     b.ToTable("Trip");
                 });
 
-            modelBuilder.Entity("Travel.Infrastructure.TripExpence", b =>
+            modelBuilder.Entity("Travel.Infrastructure.Users", b =>
                 {
-                    b.Property<int>("TripExpenceExpenceId")
+                    b.Property<int>("UsersId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TripExpenceExpenceId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UsersId"), 1L, 1);
 
-                    b.Property<string>("Description")
+                    b.Property<string>("BrandName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("TripExpenceExpenceId");
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
 
-                    b.ToTable("TripExpence");
+                    b.Property<int>("LocationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UsersId");
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("Travel.Infrastructure.Vehicle", b =>
@@ -639,22 +662,33 @@ namespace Travel.Api.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Travel.Infrastructure.Location", b =>
+            modelBuilder.Entity("Travel.Infrastructure.District", b =>
                 {
-                    b.HasOne("Travel.Infrastructure.Trip.District", "DistrictID")
-                        .WithMany()
-                        .HasForeignKey("DistrictId");
-
-                    b.Navigation("DistrictID");
-                });
-
-            modelBuilder.Entity("Travel.Infrastructure.Trip.District", b =>
-                {
-                    b.HasOne("Travel.Infrastructure.Trip.State", "StateID")
+                    b.HasOne("Travel.Infrastructure.State", "StateID")
                         .WithMany()
                         .HasForeignKey("StateId");
 
                     b.Navigation("StateID");
+                });
+
+            modelBuilder.Entity("Travel.Infrastructure.Driver", b =>
+                {
+                    b.HasOne("Travel.Infrastructure.Users", "Owner")
+                        .WithMany()
+                        .HasForeignKey("OwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Owner");
+                });
+
+            modelBuilder.Entity("Travel.Infrastructure.Location", b =>
+                {
+                    b.HasOne("Travel.Infrastructure.District", "DistrictID")
+                        .WithMany()
+                        .HasForeignKey("DistrictId");
+
+                    b.Navigation("DistrictID");
                 });
 
             modelBuilder.Entity("Travel.Infrastructure.TripDetails", b =>

@@ -30,5 +30,8 @@ namespace Travel.Dto
         public byte[] FrontCopy { get; set; }
 
         public byte[] BackCopy { get; set; }
+        [Required(ErrorMessage = "Owner id is required")]
+        public int OwnerId { get; set; }
+
     }
 }

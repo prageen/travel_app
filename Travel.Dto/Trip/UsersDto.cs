@@ -7,7 +7,7 @@ namespace Travel.Dto.Trip
     public class UsersDto
     {
         [Key]
-        public int Id { get; set; }
+        public int UsersId { get; set; }
         public string BrandName { get; set; }
         [ForeignKey("LocationId")]
         public int LocationId { get; set; }

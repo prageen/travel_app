@@ -54,7 +54,7 @@ namespace Travel.Bl.Users
             try
             {
                 var User = _unitOfWork.Users.GetById(usersId);
-                if (User.Id >= 0)
+                if (User.UsersId >= 0)
                 {
                     
                     User.Status = 2;
@@ -93,7 +93,7 @@ namespace Travel.Bl.Users
             try
             {
                 var User = _unitOfWork.Users.GetById(usersId);
-                if (User.Id >= 0)
+                if (User.UsersId >= 0)
                 {
                     User.Status = 1;
                     _unitOfWork.Users.Update(User);
@@ -130,7 +130,7 @@ namespace Travel.Bl.Users
             try
             {
                 var User = _unitOfWork.Users.GetById(usersId);
-                if (User.Id  >= 0)
+                if (User.UsersId  >= 0)
                 {
                     User.LocationId = usersDto.LocationId;
                     User.Status = usersDto.Status;

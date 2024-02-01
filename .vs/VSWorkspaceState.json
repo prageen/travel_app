@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Travel.Api",
+    "\\Travel.Api\\Controllers",
+    "\\Travel.Bl",
+    "\\Travel.Bl\\Register-User"
+  ],
+  "SelectedNode": "\\Travel.Bl\\Register-User\\RegisterBl.cs",
+  "PreviewInSolutionExplorer": false
+}

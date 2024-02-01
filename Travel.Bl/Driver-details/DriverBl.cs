@@ -98,6 +98,8 @@ namespace Travel.Bl.Driver_details
                     driverMaster.ValidTo = driverDto.ValidTo;
                     driverMaster.FrontCopy = driverDto?.FrontCopy;
                     driverMaster.BackCopy = driverDto?.BackCopy;
+                    driverMaster.OwnerId=driverDto.OwnerId;
+
                     _unitOfWork.Driver.Update(driverMaster);
                     var result = _unitOfWork.Complete();
                     if (result == 1)

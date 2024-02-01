@@ -24,6 +24,7 @@ using Travel.Bl.Trip;
 using Travel.Bl.TripExpense;
 using Travel.Bl.Vehicle;
 using Travel.Bl.VehicleExpense;
+using Travel.Bl.Users;
 using Travel.Infrastructure;
 using Travel.Repository.Interface;
 using Travel.Repository.Repositories;
@@ -87,6 +88,7 @@ namespace Travel.Api
             services.AddTransient<IStateBl, StateBl>();
             services.AddTransient<IDistrictBl, DistrictBl>();
             services.AddTransient<ILocationBl, LocationBl>();
+            services.AddTransient<IUsersBl,UsersBl>();
             services.AddIdentity<IdentityUser, IdentityRole>()
              .AddEntityFrameworkStores<DataContext>()
              .AddDefaultTokenProviders();

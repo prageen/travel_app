@@ -1,21 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Api\\Travel.Api.csproj": {}
+    "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Api\\Travel.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Api\\Travel.Api.csproj": {
+    "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Api\\Travel.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Api\\Travel.Api.csproj",
+        "projectUniqueName": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Api\\Travel.Api.csproj",
         "projectName": "Travel.Api",
-        "projectPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Api\\Travel.Api.csproj",
-        "packagesPath": "C:\\Users\\Deepaklal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Api\\obj\\",
+        "projectPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Api\\Travel.Api.csproj",
+        "packagesPath": "C:\\Users\\jithu\\.nuget\\packages\\",
+        "outputPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Deepaklal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\jithu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -28,14 +35,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Bl\\Travel.Bl.csproj": {
-                "projectPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Bl\\Travel.Bl.csproj"
+              "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Bl\\Travel.Bl.csproj": {
+                "projectPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Bl\\Travel.Bl.csproj"
               },
-              "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Dto\\Travel.Dto.csproj": {
-                "projectPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Dto\\Travel.Dto.csproj"
+              "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Dto\\Travel.Dto.csproj": {
+                "projectPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Dto\\Travel.Dto.csproj"
               },
-              "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Infrastructure\\Travel.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Infrastructure\\Travel.Infrastructure.csproj"
+              "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Infrastructure\\Travel.Infrastructure.csproj": {
+                "projectPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Infrastructure\\Travel.Infrastructure.csproj"
               }
             }
           }
@@ -87,8 +94,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -100,22 +106,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Bl\\Travel.Bl.csproj": {
+    "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Bl\\Travel.Bl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Bl\\Travel.Bl.csproj",
+        "projectUniqueName": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Bl\\Travel.Bl.csproj",
         "projectName": "Travel.Bl",
-        "projectPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Bl\\Travel.Bl.csproj",
-        "packagesPath": "C:\\Users\\Deepaklal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Bl\\obj\\",
+        "projectPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Bl\\Travel.Bl.csproj",
+        "packagesPath": "C:\\Users\\jithu\\.nuget\\packages\\",
+        "outputPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Bl\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Deepaklal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\jithu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -128,14 +141,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Dto\\Travel.Dto.csproj": {
-                "projectPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Dto\\Travel.Dto.csproj"
+              "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Dto\\Travel.Dto.csproj": {
+                "projectPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Dto\\Travel.Dto.csproj"
               },
-              "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Infrastructure\\Travel.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Infrastructure\\Travel.Infrastructure.csproj"
+              "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Infrastructure\\Travel.Infrastructure.csproj": {
+                "projectPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Infrastructure\\Travel.Infrastructure.csproj"
               },
-              "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Repository\\Travel.Repository.csproj": {
-                "projectPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Repository\\Travel.Repository.csproj"
+              "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Repository\\Travel.Repository.csproj": {
+                "projectPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Repository\\Travel.Repository.csproj"
               }
             }
           }
@@ -165,46 +178,38 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Dto\\Travel.Dto.csproj": {
+    "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Dto\\Travel.Dto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Dto\\Travel.Dto.csproj",
+        "projectUniqueName": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Dto\\Travel.Dto.csproj",
         "projectName": "Travel.Dto",
-        "projectPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Dto\\Travel.Dto.csproj",
-        "packagesPath": "C:\\Users\\Deepaklal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Dto\\obj\\",
+        "projectPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Dto\\Travel.Dto.csproj",
+        "packagesPath": "C:\\Users\\jithu\\.nuget\\packages\\",
+        "outputPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Dto\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Deepaklal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\jithu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -217,8 +222,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Infrastructure\\Travel.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Infrastructure\\Travel.Infrastructure.csproj"
+              "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Infrastructure\\Travel.Infrastructure.csproj": {
+                "projectPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Infrastructure\\Travel.Infrastructure.csproj"
               }
             }
           }
@@ -244,46 +249,38 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Infrastructure\\Travel.Infrastructure.csproj": {
+    "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Infrastructure\\Travel.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Infrastructure\\Travel.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Infrastructure\\Travel.Infrastructure.csproj",
         "projectName": "Travel.Infrastructure",
-        "projectPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Infrastructure\\Travel.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Deepaklal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Infrastructure\\obj\\",
+        "projectPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Infrastructure\\Travel.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\jithu\\.nuget\\packages\\",
+        "outputPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Deepaklal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\jithu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -333,46 +330,38 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Repository\\Travel.Repository.csproj": {
+    "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Repository\\Travel.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Repository\\Travel.Repository.csproj",
+        "projectUniqueName": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Repository\\Travel.Repository.csproj",
         "projectName": "Travel.Repository",
-        "projectPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Repository\\Travel.Repository.csproj",
-        "packagesPath": "C:\\Users\\Deepaklal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Repository\\obj\\",
+        "projectPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Repository\\Travel.Repository.csproj",
+        "packagesPath": "C:\\Users\\jithu\\.nuget\\packages\\",
+        "outputPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Deepaklal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\jithu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -385,8 +374,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Infrastructure\\Travel.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Deepaklal\\source\\repos\\Travel-Booking\\Travel-Booking\\Travel.Infrastructure\\Travel.Infrastructure.csproj"
+              "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Infrastructure\\Travel.Infrastructure.csproj": {
+                "projectPath": "D:\\Letz\\Projects\\GitProjects\\Prageen\\travel_app\\Travel.Infrastructure\\Travel.Infrastructure.csproj"
               }
             }
           }
@@ -416,31 +405,16 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -11,3 +11,16 @@ C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastruct
 C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.dll
 C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.pdb
 C:\Users\Deepaklal\source\repos\Travel-Booking\Travel-Booking\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.genruntimeconfig.cache
+D:\Letz\Projects\GitProjects\Prageen\travel_app\Travel.Infrastructure\bin\Debug\netcoreapp3.1\Travel.Infrastructure.deps.json
+D:\Letz\Projects\GitProjects\Prageen\travel_app\Travel.Infrastructure\bin\Debug\netcoreapp3.1\Travel.Infrastructure.runtimeconfig.json
+D:\Letz\Projects\GitProjects\Prageen\travel_app\Travel.Infrastructure\bin\Debug\netcoreapp3.1\Travel.Infrastructure.runtimeconfig.dev.json
+D:\Letz\Projects\GitProjects\Prageen\travel_app\Travel.Infrastructure\bin\Debug\netcoreapp3.1\Travel.Infrastructure.dll
+D:\Letz\Projects\GitProjects\Prageen\travel_app\Travel.Infrastructure\bin\Debug\netcoreapp3.1\Travel.Infrastructure.pdb
+D:\Letz\Projects\GitProjects\Prageen\travel_app\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.csproj.AssemblyReference.cache
+D:\Letz\Projects\GitProjects\Prageen\travel_app\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Letz\Projects\GitProjects\Prageen\travel_app\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.AssemblyInfoInputs.cache
+D:\Letz\Projects\GitProjects\Prageen\travel_app\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.AssemblyInfo.cs
+D:\Letz\Projects\GitProjects\Prageen\travel_app\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Letz\Projects\GitProjects\Prageen\travel_app\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.dll
+D:\Letz\Projects\GitProjects\Prageen\travel_app\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.pdb
+D:\Letz\Projects\GitProjects\Prageen\travel_app\Travel.Infrastructure\obj\Debug\netcoreapp3.1\Travel.Infrastructure.genruntimeconfig.cache
