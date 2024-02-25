@@ -34,13 +34,13 @@ namespace Travel.Api.Controllers
         public IActionResult DeleteUsers(int userId)
         {
             var responseMessage = _usersBl.DeleteUsers(userId);
-            return Ok();
+            return Ok(responseMessage);
         }
         [HttpPost("ActivateUsers")]
         public IActionResult ActivateUsers(int userId)
         {
             var responseMessage = _usersBl.ActivateUsers(userId);
-            return Ok();
+            return Ok(responseMessage);
         }
     }
 

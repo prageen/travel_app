@@ -34,6 +34,10 @@ namespace Travel.Repository.Interface
         public IStateRepository State { get; }
         public IDistrictRepository District { get; }
         public IUsersRepository Users { get; }
+        public IPlansRepository Plans { get; }
+        public IRegistrationRepository Registration { get; }
+
+
         int Complete();
     }
 }

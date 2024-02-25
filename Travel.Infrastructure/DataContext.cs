@@ -30,6 +30,10 @@ namespace Travel.Infrastructure
         public DbSet<State> States { get; set; }
         public DbSet<District> Districts { get; set; }
         public DbSet<Users> Users { get; set; }
+        public DbSet<Plans> Plans { get; set; }
+        public DbSet<Registration> Registrations { get; set; }
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

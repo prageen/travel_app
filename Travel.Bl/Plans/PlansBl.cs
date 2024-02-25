@@ -8,28 +8,66 @@ using Travel.Dto;
 using Travel.Dto.Trip;
 using Travel.Repository.Interface;
 
-namespace Travel.Bl.Users
+namespace Travel.Bl.Plans
 {
-    public class UsersBl : IUsersBl
+    public class PlansBl : IPlans
     {
         private readonly IUnitOfWork _unitOfWork;
         private IMapper _mapper;
-        public UsersBl(IUnitOfWork unitOfWork, IMapper mapper)
+        public PlansBl(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
-        public ResponseModel AddUsers(UsersDto usersDto)
+        public ResponseModel ActivatePlan(int planId)
         {
             ResponseModel response = new ResponseModel();
             try
             {
-                var usersObject = _mapper.Map<UsersDto, Infrastructure.Users>(usersDto);
-                _unitOfWork.Users.Add(usersObject);
+                var Plan = _unitOfWork.Plans.GetById(planId);
+                if (Plan.PlanId >= 0)
+                {
+                    Plan.Status = 1;
+                    _unitOfWork.Plans.Update(Plan);
+                    var result = _unitOfWork.Complete();
+                    if (result == 1)
+                    {
+                        response.Message = "Plans Activated";
+                        response.Status = "Success";
+                    }
+                    else
+                    {
+                        response.Message = "Please try later, Some error occured";
+                        response.Status = "Error";
+                    }
+                }
+                else
+                {
+                    response.Message = "Plan doesnot exisst. Try with a valid one";
+                    response.Status = "Error";
+                }
+            }
+            catch (Exception Ex)
+            {
+                Console.WriteLine(Ex);
+                response.Message = "Please try later, Some error occured";
+                response.Status = "Error";
+            }
+            return response;
+        }
+
+        public ResponseModel AddPlan(PlansDto planDto)
+        {
+            ResponseModel response = new ResponseModel();
+            try
+            {
+                var planObject = _mapper.Map<PlansDto, Infrastructure.Plans>(planDto);
+
+                _unitOfWork.Plans.Add(planObject);
                 var result = _unitOfWork.Complete();
                 if (result == 1)
                 {
-                    response.Message = "Uses  Added";
+                    response.Message = "Plan  Added";
                     response.Status = "Success";
                 }
                 else
@@ -47,23 +85,20 @@ namespace Travel.Bl.Users
             return response;
         }
 
-        public ResponseModel DeleteUsers(int usersId)
+        public ResponseModel DeactivatePlan(int planId)
         {
-
             ResponseModel response = new ResponseModel();
             try
             {
-                var User = _unitOfWork.Users.GetById(usersId);
-                if (User.UsersId >= 0)
+                var Plan = _unitOfWork.Plans.GetById(planId);
+                if (Plan.PlanId >= 0)
                 {
-                    
-                    User.Status = 2;
-                   
-                    _unitOfWork.Users.Update(User);
+                    Plan.Status = 2;
+                    _unitOfWork.Plans.Update(Plan);
                     var result = _unitOfWork.Complete();
                     if (result == 1)
                     {
-                        response.Message = "User Deleted";
+                        response.Message = "Plans Deleted";
                         response.Status = "Success";
                     }
                     else
@@ -74,44 +109,7 @@ namespace Travel.Bl.Users
                 }
                 else
                 {
-                    response.Message = "User doesnot exisst. Try with a valid one";
-                    response.Status = "Error";
-                }
-            }
-            catch (Exception Ex)
-            {
-                Console.WriteLine(Ex);
-                response.Message = "Please try later, Some error occured";
-                response.Status = "Error";
-            }
-            return response;
-        }
-        public ResponseModel ActivateUsers(int usersId)
-        {
-
-            ResponseModel response = new ResponseModel();
-            try
-            {
-                var User = _unitOfWork.Users.GetById(usersId);
-                if (User.UsersId >= 0)
-                {
-                    User.Status = 1;
-                    _unitOfWork.Users.Update(User);
-                    var result = _unitOfWork.Complete();
-                    if (result == 1)
-                    {
-                        response.Message = "User Activated";
-                        response.Status = "Success";
-                    }
-                    else
-                    {
-                        response.Message = "Please try later, Some error occured";
-                        response.Status = "Error";
-                    }
-                }
-                else
-                {
-                    response.Message = "User doesnot exisst. Try with a valid one";
+                    response.Message = "Plan doesnot exisst. Try with a valid one";
                     response.Status = "Error";
                 }
             }
@@ -124,25 +122,40 @@ namespace Travel.Bl.Users
             return response;
         }
 
-        public ResponseModel UpdateUsers(UsersDto usersDto, int usersId)
+        public ResponseModel GetPlan(int id)
+        {
+            ResponseModel response = new ResponseModel();
+            var Plan = _unitOfWork.Plans.GetById(id);
+            response.Message = Plan;
+            return response;
+        }
+
+        public ResponseModel ListPlans()
+        {
+            ResponseModel response = new ResponseModel();
+            var Plans = _unitOfWork.Plans.GetAll();
+            response.Message = Plans;
+            return response;
+        }
+
+        public ResponseModel UpdatePlan(PlansDto planDto, int planId)
         {
             ResponseModel response = new ResponseModel();
             try
             {
-                var User = _unitOfWork.Users.GetById(usersId);
-                if (User.UsersId  >= 0)
+                var Plan = _unitOfWork.Plans.GetById(planId);
+                if (Plan.PlanId >= 0)
                 {
-                    User.LocationId = usersDto.LocationId;
-                    User.Status = usersDto.Status;
-                    User.CreatedDate = usersDto.CreatedDate;
-                    User.Password=usersDto.Password;
-                    User.PhoneNumber = usersDto.PhoneNumber;
-                    User.UserType=usersDto.UserType;
-                    _unitOfWork.Users.Update(User);
+                    Plan.PlanName = planDto.PlanName;
+                    Plan.PlanDesription = planDto.PlanDesription;
+                    Plan.Days = planDto.Days;
+                    Plan.Status = 1;
+
+                    _unitOfWork.Plans.Update(Plan);
                     var result = _unitOfWork.Complete();
                     if (result == 1)
                     {
-                        response.Message = "User Updated";
+                        response.Message = "Plan Updated";
                         response.Status = "Success";
                     }
                     else
@@ -167,3 +180,4 @@ namespace Travel.Bl.Users
         }
     }
 }
+

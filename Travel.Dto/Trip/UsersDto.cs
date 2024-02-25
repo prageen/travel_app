@@ -8,7 +8,6 @@ namespace Travel.Dto.Trip
     {
         [Key]
         public int UsersId { get; set; }
-        public string BrandName { get; set; }
         [ForeignKey("LocationId")]
         public int LocationId { get; set; }
         public string Password { get; set; }
