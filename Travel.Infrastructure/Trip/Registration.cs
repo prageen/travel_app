@@ -23,6 +23,6 @@ namespace Travel.Infrastructure
         public DateTime AddedOn { get; set; }
         public DateTime UpdatedOn { get; set; }
         public int Status { get; set; }
-
+        public string Logo { get; set; }
     }
 }

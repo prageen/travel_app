@@ -23,7 +23,6 @@ namespace Travel.Api.Mapper
             CreateMap<UsersDto, Users>().ReverseMap();
             CreateMap<PlansDto, Plans>().ReverseMap();
             CreateMap<RegistrationDto, Registration>().ReverseMap();
-
         }
     }
 }

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Travel.Infrastructure;
 
@@ -11,9 +12,10 @@ using Travel.Infrastructure;
 namespace Travel.Api.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20240324112837_AddUsertypeAndPhoneNumberOnRegistration")]
+    partial class AddUsertypeAndPhoneNumberOnRegistration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -408,6 +410,14 @@ namespace Travel.Api.Migrations
                     b.Property<string>("Logo")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Passowrd")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phonenumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("PlanId")
                         .HasColumnType("int");
 
@@ -422,6 +432,9 @@ namespace Travel.Api.Migrations
 
                     b.Property<DateTime>("UpdatedOn")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("UserType")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("UsersId")
                         .HasColumnType("int");

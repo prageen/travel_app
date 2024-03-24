@@ -24,5 +24,12 @@ namespace Travel.Dto.Trip
         public DateTime AddedOn { get; set; }
         public DateTime UpdatedOn { get; set; }
         public int Status { get; set; }
+        public string Logo { get; set; }
+        [Required(ErrorMessage = "Password is mandatory")]
+        public string Passowrd { get; set; }
+        public string UserType { get; set; } = "Owner";
+        [Required(ErrorMessage = "Phone number is required")]
+        [RegularExpression(@"^[0-9]+$", ErrorMessage = "Please enter a valid phone number")]
+        public string Phonenumber { get; set; }
     }
 }

@@ -10,6 +10,9 @@ namespace Travel.Api.Controllers
     {
         private readonly IRegistration _registrationBl;
         private readonly IConfiguration _configuration;
+
+        private readonly Bl.Users.IUsersBl _usersBl;
+
         public RegistrationController(IRegistration registrationBl, IConfiguration configuration)
         {
             _registrationBl = registrationBl;
@@ -19,6 +22,14 @@ namespace Travel.Api.Controllers
         public IActionResult AddPlans(RegistrationDto registrationDto)
         {
             var responseMessage = _registrationBl.AddRegistration(registrationDto);
+            UsersController usersController = new UsersController(_configuration, _usersBl);
+            UsersDto usersDto = new UsersDto { 
+            CreatedDate=System.DateTime.Now,
+            LocationId=registrationDto.LocationId,
+            Password="",
+             
+            };
+            //usersController.AddUsers()
             return Ok(responseMessage);
         }
         [HttpPost("updateRegistration")]

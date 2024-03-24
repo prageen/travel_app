@@ -62,6 +62,22 @@ namespace Travel.Bl.Registration
             ResponseModel response = new ResponseModel();
             try
             {
+                registrationDto.Status= 1;
+                 UsersDto usersDto = new UsersDto
+                 {
+                     CreatedDate = DateTime.Now,
+                     LocationId = registrationDto.LocationId,
+                     Password = registrationDto.Passowrd,
+                     PhoneNumber = registrationDto.Phonenumber,
+                     Status = registrationDto.Status,
+                     UserType = registrationDto.UserType,
+                 };
+
+                var usersObject = _mapper.Map<UsersDto, Infrastructure.Users>(usersDto);
+                _unitOfWork.Users.Add(usersObject);
+                _unitOfWork.Complete();
+                registrationDto.UsersId = usersObject.UsersId;
+
                 registrationDto.AddedOn = DateTime.Now;
 
                 var registrationObject = _mapper.Map<RegistrationDto, Infrastructure.Registration>(registrationDto);
